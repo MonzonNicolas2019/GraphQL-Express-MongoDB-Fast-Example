@@ -6,7 +6,15 @@ const typeDefinitions = `
     type Query {
         hello: String
         modulefor17(n: Int!): Int
-    },
+        tortugas: [Tortuga]
+    }
+
+    type Tortuga {
+        _id: ID,
+        especie: String!,
+        kilogramos: Int!,
+        terrestre: Boolean
+    }
     
 `;
 
