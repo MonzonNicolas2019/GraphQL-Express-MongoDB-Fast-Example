@@ -5,8 +5,9 @@ const typeDefinitions = `
 
     type Query {
         hello: String
-    }
-
+        modulefor17(n: Int!): Int
+    },
+    
 `;
 
 export default makeExecutableSchema({
