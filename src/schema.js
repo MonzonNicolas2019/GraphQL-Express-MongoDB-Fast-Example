@@ -18,6 +18,8 @@ const typeDefinitions = `
 
     type Mutation {
         createTortoiseAndTurtles(input: TortugaInput): Tortuga
+        deleteTortoiseAndTurtles(_id: ID): Tortuga
+        updateTortoiseAndTurtles(_id: ID, input: TortugaInput): Tortuga
     }
 
     input TortugaInput {
