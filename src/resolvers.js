@@ -12,6 +12,13 @@ export const resolvers = {
         tortugas: () => {
             return tortugas;
         }
+    },
+    Mutation: {
+        createTortoiseAndTurtles: (_, {input}) => {
+            input._id = tortugas.length;
+            tortugas.push(input);
+            return input;
+        }
     }
 
 }

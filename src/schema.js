@@ -15,6 +15,16 @@ const typeDefinitions = `
         kilogramos: Int!,
         terrestre: Boolean
     }
+
+    type Mutation {
+        createTortoiseAndTurtles(input: TortugaInput): Tortuga
+    }
+
+    input TortugaInput {
+        especie: String!,
+        kilogramos: Int!,
+        terrestre: Boolean
+    }
     
 `;
 

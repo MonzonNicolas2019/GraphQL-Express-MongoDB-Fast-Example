@@ -14,4 +14,17 @@ Algunos ejemplos para probar desde Graphiql:
   modulefor17(n: 27)
 }
 
+mutation {
+    createTortoiseAndTurtles(input: {
+                especie: "Trachemys scripta elegans"
+        kilogramos: 2,
+        terrestre: false
+    }){
+            _id
+        especie
+        kilogramos
+        terrestre
+    }
+}
+
 `
