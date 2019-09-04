@@ -16,7 +16,7 @@ Algunos ejemplos para probar desde Graphiql:
 
 mutation {
     createTortoiseAndTurtles(input: {
-                especie: "Trachemys scripta elegans"
+        especie: "Trachemys scripta elegans"
         kilogramos: 2,
         terrestre: false
     }){
